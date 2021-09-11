@@ -178,3 +178,27 @@ section {
 .secondary-border {
   border-color: #39a6b2;
 }
+
+.trainers {
+  text-align: center;
+}
+
+.trainer {
+  width: 900px;
+  margin: 0 auto;
+  background: #024e76;
+  color: #fce138;
+  overflow: auto;
+}
+
+.trainer img {
+  width: 35%;
+  float: left;
+  overflow: auto;
+}
+.trainer-bio {
+  padding: 35px;
+  float: left;
+  width: 65%;
+  overflow: auto;
+}
