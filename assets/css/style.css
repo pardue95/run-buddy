@@ -43,7 +43,6 @@ header nav ul {
   list-style: none;
 }
 
-
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
@@ -54,20 +53,21 @@ header nav ul li a {
 
 /* FOOTER STYLES START */
 footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background: #fce138;
   padding: 40px 35px;
   width: 100%;
 }
 
 footer h2 {
-  display: inline;
   color: #024e76;
   font-size: 30px;
   margin: 0;
 }
 
 footer div {
-  float: right;
   line-height: 1.5;
   text-align: right;
 }
