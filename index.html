@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Run Buddy</title>
   </head>
@@ -118,7 +119,6 @@
       <div class="flex-row">
         <h2 class="section-title secondary-border">What You Do</h2>
       </div>
-
       <div class="step">
         <h3>Step 1.</h3>
         <div class="step-info">
@@ -131,24 +131,18 @@
           </div>
         </div>
       </div>
-
-      <section>
-        <div class="step">
-          <h3>Step 2.</h3>
-          <div class="step-info">
-            <div class="step-img">
-              <img src="./assets/images/step-2.svg" alt="" />
-            </div>
-            <div class="step-text">
-              <h4>Consult With One Of Our Trainers.</h4>
-              <p>
-                Are you here to build muscle, lose weight, or just feel good?
-              </p>
-            </div>
+      <div class="step">
+        <h3>Step 2.</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-2.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>Consult With One Of Our Trainers</h4>
+            <p>Are you here to build muscle, lose weight, or just feel good?</p>
           </div>
         </div>
-      </section>
-
+      </div>
       <div class="step">
         <h3>Step 3.</h3>
         <div class="step-info">
@@ -156,11 +150,23 @@
             <img src="./assets/images/step-3.svg" alt="" />
           </div>
           <div class="step-text">
-            <h4>Get Running.</h4>
+            <h4>Get Running</h4>
             <p>
               Hit the ground running (literally) once your trainer lays out your
               plan.
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h3>Step 4.</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-4.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>See Results</h4>
+            <p>Bi-weekly checkins with your trainer will keep you focused</p>
           </div>
         </div>
       </div>
@@ -172,6 +178,7 @@
       <div class="flex-row">
         <h2 class="section-title primary-border">Meet The Trainers</h2>
       </div>
+
       <div class="trainers">
         <article class="trainer">
           <img
@@ -196,8 +203,8 @@
             alt="Joanna Gill cooling off after a work out"
           />
           <div class="trainer-bio">
-            <h3>Joanna Gill</h3>
-            <h4>Endurance</h4>
+            <h3 class="trainer-name">Joanna Gill</h3>
+            <h4 class="trainer-role">Endurance</h4>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
               neque animi quo cupiditate commodi saepe culpa sed itaque velit
@@ -213,8 +220,8 @@
             alt="Harry Smith wearing a headband and lifting comically small pink weights"
           />
           <div class="trainer-bio">
-            <h3>Harry "The Headband" Smith</h3>
-            <h4>Strength</h4>
+            <h3 class="trainer-name">Harry "The Headband" Smith</h3>
+            <h4 class="trainer-role">Strength</h4>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
               neque animi quo cupiditate commodi saepe culpa sed itaque velit
@@ -229,7 +236,9 @@
 
     <!-- "reach out" start -->
     <section id="reach-out" class="contact">
-      <h2 class="section-title secondary-border">Reach Out</h2>
+      <div class="flex-row">
+        <h2 class="section-title secondary-border">Reach Out</h2>
+      </div>
 
       <div class="contact-info">
         <div>
@@ -243,9 +252,9 @@
           <address>
             55 Main Street <br />
             Some Town, Ca <br />
-            12345 <br />
-            P: <a href="tel:555.786.2839">555.RUN.BUDZ (555.786.2839)</a><br />
-            E: <a href="mailto://info@runbuddy.io">info@runbuddy.io</a>
+            12345<br />
+            P: 555.RUN.BUDZ (555.786.2839)<br />
+            E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
           </address>
         </div>
 
@@ -267,7 +276,8 @@
           frameborder="0"
           style="border: 0"
           allowfullscreen
-        ></iframe>
+        >
+        </iframe>
       </div>
     </section>
     <!-- "reach out" end -->
