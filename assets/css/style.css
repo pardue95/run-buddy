@@ -9,6 +9,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+
 /* HEADER / NAV BAR STYLES START */
 
 header {
@@ -17,13 +18,11 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: -webkit-sticky;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   background-position: 80%;
 }
@@ -51,7 +50,6 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  
 }
 
 header nav ul li a {
@@ -68,14 +66,9 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
-header nav ul li a:hover {
-  background: #fce138;
-  color: #024e76;
-  border-radius: 15px;
-  text-shadow: none;
-}
-
 /* HEADER / NAVBAR STYLES END */
+
+
 
 /* FOOTER STYLES START */
 footer {
@@ -110,7 +103,7 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -148,7 +141,7 @@ section {
 }
 
 .hero-form button:hover {
-  background-color: #39a6b2;
+  background-color: #39a6b2;  
 }
 
 .hero-form h3 {
@@ -166,14 +159,14 @@ section {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
   border-radius: 10px;
   background-color: rgba(255,255,255, 0.75);
 }
 
 .form-input:focus {
-  background-color: rgba(255, 255, 255, 1);
-  outline:none;
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .hero-form label {
@@ -188,24 +181,8 @@ section {
   font-size: 16px;
   border-radius: 10px;
 } 
-
-.hero-form button:hover {
-  background-color: #39a6b2;
-}
 /* HERO STYLES END */
 
-.checkbox-wrapper label::before,
-.radio-wrapper label::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid #024e76;
-  position: absolute;
-  top: -4px;
-  left: -30px;
-}
-/* HERO STYLES END */
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -239,8 +216,9 @@ section {
 }
 /* WHAT YOU DO STYLES END */
 
+
 /* WHAT YOU DO STYLES START */
-.steps {
+.steps { 
   background: #fce138;
 }
 
@@ -248,15 +226,15 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  
+  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.step:not(:last-child) {
-  border-bottom: 1px solid #39a6b2;
+.step:last-child {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -370,16 +348,14 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -390,6 +366,10 @@ section {
   margin-top: 5px;
   border-radius: 10px;
   background-color: rgba(255,255,255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
   outline: none;
 }
 
@@ -405,16 +385,6 @@ section {
 }
 
 .contact-form button:hover {
-  color: #fce138;
-  background: #39a6b2;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.contact-info a {
   color: #fce138;
   background: #39a6b2;
 }
@@ -443,7 +413,6 @@ section {
     padding-bottom: 0;
     justify-content: center;
     position: relative;
-    
   }
 
   header h1 {
@@ -461,17 +430,15 @@ section {
     font-size: 20px;
   }
 
-  footer h2,
-  footer div {
+  footer h2, footer div {
     text-align: center;
     width: 100%;
   }
 
-  .hero-cta,
-  .hero-form {
+  .hero-cta, .hero-form {
     width: 100%;
   }
-
+  
   .hero-cta {
     text-align: center;
   }
@@ -479,12 +446,12 @@ section {
   .section-title {
     width: 80%;
   }
-
+  
   .trainer {
     flex: 0 70%;
   }
-
-  .contact-info iframe {
+  
+  .contact-info iframe{
     flex: 1 100%;
   }
 }
@@ -514,11 +481,10 @@ section {
   }
 
   .step-text {
-    flex: 100%;
+    flex: 100%;  
   }
 
-  .trainer-bio h3,
-  .trainer-bio h4 {
+  .trainer-bio h3, .trainer-bio h4 {
     display: block;
   }
 }
